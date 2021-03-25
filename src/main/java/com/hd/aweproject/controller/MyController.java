@@ -33,6 +33,7 @@ public class MyController {
 //        question.setUserId(userId);
 //        myService.addQuestion(question);
 //    }
+    
     @PostMapping("aq")
     public void addQuestion(@RequestBody Question question) {
         questionService.addQuestion(question);
