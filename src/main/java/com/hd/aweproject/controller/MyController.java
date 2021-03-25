@@ -25,6 +25,7 @@ public class MyController {
     public List<Question> searchAll() {
         return questionService.searchAll();
     }
+    
 //    @GetMapping("aq")
 //    public void addQuestion(@RequestParam("title") String title, @RequestParam("answer") String answer, @RequestParam("userId") String userId){
 //        Question question = new Question();
@@ -33,7 +34,7 @@ public class MyController {
 //        question.setUserId(userId);
 //        myService.addQuestion(question);
 //    }
-    
+
     @PostMapping("aq")
     public void addQuestion(@RequestBody Question question) {
         questionService.addQuestion(question);
